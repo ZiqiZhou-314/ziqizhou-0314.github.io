@@ -13,7 +13,7 @@ output:
 
 #Let's add some links
 
-I often [google](www.google.com) to do data science.
+I often [google](https://www.google.com) to do **data science**.
 
 
 
