@@ -6,18 +6,19 @@ output:
     toc_float: true
     theme: cerulean
 ---
+My name is ziqi and I make this website.
 
 # This is ziqi's first simple website.
 
 ![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
 
-#Let's add some links
+# Let's add some links
 
 I often [google](https://www.google.com) to do **data science**.
 
+You can know about me [here](about.html).
 
-
-##Let us add an image.
+# Let us add an image.
 here's a plane
 
 ![](IMG_0238.jpg)
