@@ -2,11 +2,12 @@
 title: "Ploty Example"
 output: 
   html_document:
+    code_folding: hide
     toc: true
     toc_float: true
 ---
 
-This is ploty example _withinteractivity-github_
+This is ploty example _with interactivity graphics_
 
 Let's do some plots!
 
@@ -18,7 +19,7 @@ library(p8105.datasets)
 library(plotly)
 ```
 
-do some cleaning. Entire home/ apt in Manhatten
+# do some cleaning. Entire home/ apt in Manhatten
 ```{r}
 set.seed(1)
 
@@ -35,13 +36,15 @@ nyc_airbnb =
     price %in% 100:500)  %>% 
   sample_n(5000)
 ```
-1. scatter plot
+
+# 1. scatter plot
 ```{r}
 nyc_airbnb %>% 
   plot_ly(x = ~lat, y = ~long, type = "scatter", mode = "markers", 
           color = ~price, alpha = 0.5)
 ```
-2. boxplot
+
+# 2. boxplot
 ```{r}
 nyc_airbnb %>% 
   mutate(neighbourhood = fct_reorder(neighbourhood, price)) %>% 
@@ -49,7 +52,8 @@ nyc_airbnb %>%
     y = ~price, color = ~neighbourhood , type = "box", colors = "Set1"
   )
 ```
-3. barchart
+
+# 3. barchart
 ```{r}
 nyc_airbnb %>% 
   count(neighbourhood) %>% 
@@ -59,9 +63,6 @@ nyc_airbnb %>%
 
 Trace type must be one of the following: 'scatter', 'bar', 'box', 'heatmap', 'histogram', 'histogram2d', 'histogram2dcontour', 'contour', 'scatterternary', 'violin', 'waterfall', 'pie', 'sunburst', 'scatter3d', 'surface', 'isosurface', 'mesh3d', 'cone', 'streamtube', 'scattergeo', 'choropleth', 'scattergl', 'splom', 'pointcloud', 'heatmapgl', 'parcoords', 'parcats', 'scattermapbox', 'sankey', 'table', 'carpet', 'scattercarpet', 'contourcarpet', 'ohlc', 'candlestick', 'scatterpolar', 'scatterpolargl', 'barpolar', 'area'
 
-```{r}
-
-```
 
 
 
