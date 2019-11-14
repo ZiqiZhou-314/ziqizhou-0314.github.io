@@ -5,12 +5,12 @@ navbar:
   right:
     - text: "About"
       href: about.html
-    - text: Example
+    - text: Examples
       menu:
-    - text: "Ploty"
-      href: ploty.html
-    - text: "Dashboard"
-      href: dashboard.html
+      - text: "Plotly"
+        href: plotly.html
+      - text: "Dashboard"
+        href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<secondplanet@outlook.com>
     - icon: fa-github fa-lg
